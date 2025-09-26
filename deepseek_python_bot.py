@@ -2,7 +2,7 @@ import os
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-BOT_TOKEN = os.environ['8215604550:AAFLQSOd-dWgSnPTyfu493C1j1exQ6m-moQ']  # Will set in Railway
+BOT_TOKEN = os.environ['BOT_TOKEN']  # Will set in Railway
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("🎉 Bot is running 24/7! Send me an image or video.")
